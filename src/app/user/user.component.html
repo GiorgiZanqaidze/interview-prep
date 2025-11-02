@@ -1,2 +1,9 @@
-<!--  user name -->
-<h2>{{ name() }}</h2>
+<div style="border: 1px solid black; padding: 10px">
+  <div>{{ user.name }}</div>
+  <div>{{ counter }}</div>
+
+  <button (click)="mutateUser($event)">❌ Mutate User (won't detect)</button>
+  <button (click)="replaceUser()">✅ Replace User (will detect)</button>
+  <button (click)="incrementBad()">❌ Increment Bad (won't detect)</button>
+  <button (click)="incrementGood()">✅ Increment Good (will detect)</button>
+</div>
