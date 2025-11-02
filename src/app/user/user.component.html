@@ -1,9 +1,22 @@
 <div style="border: 1px solid black; padding: 10px">
-  <div>{{ user.name }}</div>
-  <div>{{ counter }}</div>
+  <h3>User Component (OnPush)</h3>
 
-  <button (click)="mutateUser($event)">❌ Mutate User (won't detect)</button>
-  <button (click)="replaceUser()">✅ Replace User (will detect)</button>
-  <button (click)="incrementBad()">❌ Increment Bad (won't detect)</button>
-  <button (click)="incrementGood()">✅ Increment Good (will detect)</button>
+  <div>User: {{ user.name }}</div>
+  <div>Counter: {{ counter }}</div>
+  <div>API Data: {{ apiData }}</div>
+  <div>Loading: {{ loading() ? 'Yes' : 'No' }}</div>
+
+  <hr />
+
+  <h4>Mutation Tests</h4>
+  <button (click)="mutateUser($event)">❌ Mutate User</button>
+  <button (click)="replaceUser()">✅ Replace User</button>
+  <button (click)="incrementBad()">❌ Increment Bad</button>
+  <button (click)="incrementGood()">✅ Increment Good</button>
+
+  <hr />
+
+  <h4>API Call Simulations</h4>
+  <button (click)="fetchDataBad()">❌ Fetch (no markForCheck)</button>
+  <button (click)="fetchDataWithObservable()">❌ Fetch (with Observable + Signals)</button>
 </div>
