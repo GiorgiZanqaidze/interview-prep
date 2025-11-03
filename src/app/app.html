@@ -1,6 +1,32 @@
 <div class="container">
   <h1>{{ title() }}</h1>
-  <app-user />
+
+  <app-tab-group>
+    <app-tab title="User Component">
+      <app-user />
+    </app-tab>
+
+    <app-tab title="Overview">
+      <h2>Welcome to Interview Prep</h2>
+      <p>This application demonstrates Angular concepts including:</p>
+      <ul>
+        <li>Content Projection with ng-content</li>
+        <li>@ContentChildren decorator</li>
+        <li>AfterContentInit lifecycle hook</li>
+        <li>Tab navigation system</li>
+      </ul>
+    </app-tab>
+
+    <app-tab title="Features">
+      <h2>Key Features</h2>
+      <ul>
+        <li>✨ Dynamic tab switching</li>
+        <li>🎨 Smooth animations</li>
+        <li>📦 Standalone components</li>
+        <li>🔧 Reusable component architecture</li>
+      </ul>
+    </app-tab>
+  </app-tab-group>
 </div>
 
 <router-outlet />
