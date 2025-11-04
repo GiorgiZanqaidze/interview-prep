@@ -11,6 +11,7 @@ Based on: [GeeksForGeeks Angular Interview Questions](https://www.geeksforgeeks.
 1. **Self-Quiz Mode**: Cover the answers and try to answer each question
 2. **Review Mode**: Read through all Q&A pairs
 3. **Practice Mode**: Code the examples yourself
+
 4. **Track Progress**: Check off questions you can confidently answer
 
 ---
